@@ -1,0 +1,16 @@
+.example-container {
+  position: absolute;
+  top: 3.75rem;
+  bottom: 3.75rem;
+  left: 0;
+  right: 0;
+}
+
+.sidenav {
+  background-color: aqua;
+  width: 20%;
+}
+
+.toggle {
+  cursor: pointer;
+}
