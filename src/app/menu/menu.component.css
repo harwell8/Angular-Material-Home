@@ -1,16 +1,105 @@
 .example-container {
   position: absolute;
-  top: 3.75rem;
-  bottom: 3.75rem;
+  top: 5.5rem;
+  bottom: 4rem;
   left: 0;
   right: 0;
 }
 
 .sidenav {
   background-color: aqua;
-  width: 20%;
+  width: 15%;
 }
 
 .toggle {
   cursor: pointer;
 }
+
+
+.contex-superior{
+  margin-top: 6%;
+  display: flex;
+  align-items: center;
+}
+
+.celdas{
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+}
+
+p{
+  font-size: 1.2rem;
+  margin: 0;
+}
+@media (max-height: 700px){
+  .contex-superior{
+    margin-top: 0;
+  }
+  .example-container {
+    top: 4.3rem;
+    bottom: 3rem;
+  }
+  img{
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  
+  
+}
+
+@media (min-width: 1000px){
+  p{
+    font-size: 1.5rem;
+  }
+  
+}
+
+
+@media (max-width: 1199px){
+  .celdas{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 991px){
+  .celdas{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 770px){
+  .celdas{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 440px){
+  .contex-superior{
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 308px){
+  .example-container {
+    top: 6.5rem;
+    bottom: 3.5rem;
+  }
+  img{
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  p{
+    font-size: 1.1rem;
+  }
+  .celdas{
+    grid-auto-rows: minmax(150px, auto);
+  }
+}  

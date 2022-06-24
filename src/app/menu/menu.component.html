@@ -1,11 +1,63 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav class="sidenav" opened #nav mode="side">
+  <mat-sidenav class="sidenav" closed #nav mode="side">
     <span>Menu</span>
     <!-- Solo para Cristian -->
   </mat-sidenav>
   <!-- ------------------------------------------------------------------------------------------------------------- -->
   <mat-sidenav-content>
-    <div><mat-icon class="toggle" (click)="nav.toggle()">menu</mat-icon></div>
-    <!-- Solo para Carlos -->
+    <div class="menu">
+      <mat-icon class="toggle" (click)="nav.toggle()">menu</mat-icon>
+    </div>
+
+
+
+    <div class="contex-superior">
+      <div class="container texthome text-center"><br>
+        <div class="content2">
+          <div>
+            <h4><b><br>Bienvenidos a LíderApp.<br></b></h4>
+            <p>
+              Desde acá podrá realizar la gestión del seguimiento de los talentos asignados al
+            </p>
+            <p>
+              cliente <b>BANCOLOMBIA</b> y explorar distintas categorías.<br>
+            </p>
+          </div><br><br>
+          <div class="m-0 row justify-content-center">
+            <div class="grid-container container celdas ">
+              <div class="container text-center grid-item">
+                <a class=" align-items-center" href="#" routerLink="construction">
+                  <img src="../../assets/image/seguimentoTalento.png" height="100" width="100" alt="MDB Logo"
+                    loading="lazy" />
+                </a><br><br>
+                <p>Seguimiento <br> Talentos</p>
+              </div>
+              <div class="container text-center grid-item">
+                <a class=" align-items-center" href="#" routerLink="construction">
+                  <img src="../../assets/image/seguimientoBanco.png" height="100" width="100" alt="MDB Logo"
+                    loading="lazy" />
+                </a><br><br>
+                <p>Seguimiento <br> Banco</p>
+              </div>
+              <div class="container text-center grid-item">
+                <a class=" align-items-center" href="#" routerLink="construction">
+                  <img src="../../assets/image/crearLiderBanco.png" height="100" width="100" alt="MDB Logo"
+                    loading="lazy" />
+                </a><br><br>
+                <p>Crear líder <br> Banco</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
   </mat-sidenav-content>
 </mat-sidenav-container>

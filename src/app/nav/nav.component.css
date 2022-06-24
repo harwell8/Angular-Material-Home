@@ -1,3 +1,74 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+
+.nav{
+  height: 5.5rem;
+  background: #c2382f;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  width: 5rem;
+  height: 5rem;
+}
+
+.cerrarsesion{
+  text-decoration: none;
+  background: rgb(224, 224, 224);
+  color: #c2382f;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 2px;
+}
+
+.titulo{
+  font-size: 2.3rem;
+  font-weight: bold;
+  font-family: 'Handel Gothic D', sans-serif;
+  color: aliceblue;
+}
+
+@media (max-height: 700px){
+  .titulo{
+    font-size: 2rem;
+  }
+  .cerrarsesion{
+    font-size: 1.1rem;
+    padding: 1px;
+  }
+  img{
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  .nav{
+    height: 4.3rem; 
+  }
+  
+}
+
+
+@media (max-width: 600px){
+  
+  .cerrarsesion{   
+    border-radius: 2px;
+    font-size: 1rem;
+  }
+  .titulo{
+    font-size: 1.8rem;
+  }
+  img{
+    width: 3.4rem;
+    height: 3.4rem;
+
+  }
+}
+
+@media (max-width: 308px){
+  .nav{
+    height: 6.5rem; 
+  }
+}
